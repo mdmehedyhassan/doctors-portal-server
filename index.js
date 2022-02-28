@@ -6,7 +6,7 @@ require('dotenv').config();
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const port = process.env.PORT || 5000;
 
-const serviceAccount = require("./n-doctors-portal-firebase-adminsdk.json");
+const serviceAccount = require("./doctors-portal-firebase-adminsdk.json");
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount)
 });
